@@ -4,6 +4,27 @@ body {
 margin: 0;
 font-family: 'Bitter', serif;
 }
+@keyframes salto {
+    0% {
+        transform: translate(0px, 10px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.listas {
+    transition: background-color 0.5s ease;
+    
+}
+
+.listas:hover {
+    background-color: gray;
+    animation-name: salto;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
 
 .cabecera {
     background-color: black;
