@@ -1,8 +1,7 @@
 html,
 body {
     background-color:white;
-margin: 0;
-font-family: 'Bitter', serif;
+    margin: 0;
 }
 @keyframes salto {
     0% {
@@ -14,8 +13,7 @@ font-family: 'Bitter', serif;
 }
 
 .listas {
-    transition: background-color 0.5s ease;
-    
+    transition: background-color 0.5s ease; 
 }
 
 .listas:hover {
@@ -23,44 +21,6 @@ font-family: 'Bitter', serif;
     animation-name: salto;
     animation-duration: 0.5s;
     animation-iteration-count: 2;
-}
-
-
-.cabecera {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    /* gap: 700px;  */
-    align-items: center;
-}
-
-.cuerpo {
-    width: 100%;
-}
-
-.cuerpo img {
-    width: 100%;
-}
-
-.menu ul {
-    display:flex;
-    padding: 0%;
-}
-
-.menu ul > li {
-    list-style: none;
-    padding: 10px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color:white;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.menu li:hover {
-    border-bottom: 1px solid black;
 }
 
 .titulo {
@@ -87,31 +47,6 @@ font-family: 'Bitter', serif;
 .pie_pagina {
     color: white;
     background-color: black;
-}
-
-.grid-pie {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: "logo texto redes";
-    align-items: center;
-}
-
-.pie_pagina .logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-}
-
-.copy {
-    grid-area: texto;
-    display: flex;
-    justify-content: center;
-}
-
-.redes {
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
 }
 
 .redes ul {
@@ -299,6 +234,17 @@ form textarea {
 }
 
 @media (max-width: 480px) {
+
+    #index {
+        height: 100vh;
+        position: relative;
+    }
+
+    #index .pie_pagina {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
 
     .logo img {
         width: 70px;
