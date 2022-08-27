@@ -90,8 +90,8 @@
 .tarjeta5,
 .tarjeta6 {
   width: 90%;
-  height: 300px;
   margin: auto;
+  height: 300px;
   display: flex;
   flex-direction: column;
   text-align: center;
