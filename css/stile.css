@@ -55,8 +55,15 @@
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "mate_camionero_bombilla termo_mate_campero yerbero_paris" "mate_imperial equipo_de_mate_clasico equipo_de_mate_stanly";
+  grid-template-areas: "mate_camionero_bombilla termo_mate_campero yerbero_paris" "mate_imperial equipo_de_mate_clasico equipo_de_mate_stanly" "Mate_y_Termo_Patagonia yerbero_de_cuero_ecologico Mate_Grabado";
   gap: 15px;
+}
+.productos a {
+  background-color: gray;
+  padding: 8px;
+  border-radius: 30px;
+  animation-name: salto;
+  animation-duration: 5s;
 }
 
 .tarjeta1 {
@@ -83,12 +90,27 @@
   grid-area: equipo_de_mate_stanly;
 }
 
+.tarjeta7 {
+  grid-area: Mate_y_Termo_Patagonia;
+}
+
+.tarjeta8 {
+  grid-area: yerbero_de_cuero_ecologico;
+}
+
+.tarjeta9 {
+  grid-area: Mate_Grabado;
+}
+
 .tarjeta1,
 .tarjeta2,
 .tarjeta3,
 .tarjeta4,
 .tarjeta5,
-.tarjeta6 {
+.tarjeta6,
+.tarjeta7,
+.tarjeta8,
+.tarjeta9 {
   width: 90%;
   margin: auto;
   height: 300px;
@@ -124,7 +146,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .imagen_1 img {
   width: 100%;
 }
@@ -133,12 +154,6 @@
   position: relative;
   height: 100vh;
 }
-
-#contacto h2 {
-  text-align: center;
-  font-size: 35px;
-}
-
 .contacto form {
   margin-top: 50px;
   display: flex;
@@ -146,31 +161,28 @@
   align-items: center;
   row-gap: 15px;
 }
-
-.contacto footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.form input {
+.contacto form input {
   width: 300px;
   height: 25px;
 }
-
-.form textarea {
+.contacto form textarea {
   width: 300px;
   height: 45px;
+}
+
+#contacto h2 {
+  text-align: center;
+  font-size: 35px;
+}
+#contacto footer {
+  width: 100%;
 }
 
 #nosotros {
   position: relative;
   height: 100vh;
 }
-
 #nosotros footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
@@ -182,7 +194,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .contenedor_nosotros h2 {
   margin-top: 30px;
 }

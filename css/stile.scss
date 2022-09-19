@@ -22,23 +22,23 @@ $negro: black;
         animation-iteration-count: 2;
     }
 }
-.titulo {
+.titulo{
     text-align: center;
     color: $negro;
     p{
         color: $negro;
     }
 }
-.subtitulo {
+.subtitulo{
     text-align: center;
     color: $negro;
     p{
         color: $negro;
     }
 }
-.pie_pagina {
+.pie_pagina{
     background-color: $negro;
-    ul {
+    ul{
         list-style-type: none;
         color: white;
         display: flex;
@@ -48,45 +48,64 @@ $negro: black;
             color: inherit;
         }
     }
-    .copy {
+    .copy{
         color: white;
         text-align: center;
-
     }
 }
-.productos {
+.productos{
     color: $negro;
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "mate_camionero_bombilla termo_mate_campero yerbero_paris"
-                         "mate_imperial equipo_de_mate_clasico equipo_de_mate_stanly";
+                         "mate_imperial equipo_de_mate_clasico equipo_de_mate_stanly"
+                         "Mate_y_Termo_Patagonia yerbero_de_cuero_ecologico Mate_Grabado";
     gap: 15px;  
+    a{
+        background-color:gray;
+        padding: 8px;
+        border-radius: 30px;
+        animation-name: salto;
+        animation-duration: 5s;
+    }
 }
-.tarjeta1 {
+.tarjeta1{
     grid-area: mate_camionero_bombilla;
 }
 .tarjeta2{
     grid-area: termo_mate_campero;
 }
-.tarjeta3 {
+.tarjeta3{
     grid-area: yerbero_paris;
 }
 .tarjeta4{
     grid-area: mate_imperial;
 }
-.tarjeta5 {
+.tarjeta5{
     grid-area: equipo_de_mate_clasico;
 }
-.tarjeta6 {
+.tarjeta6{
     grid-area: equipo_de_mate_stanly;
+}
+.tarjeta7{
+    grid-area: Mate_y_Termo_Patagonia;
+}
+.tarjeta8{
+    grid-area: yerbero_de_cuero_ecologico;
+}
+.tarjeta9{
+    grid-area: Mate_Grabado;
 }
 .tarjeta1,
 .tarjeta2,
 .tarjeta3,
 .tarjeta4,
 .tarjeta5,
-.tarjeta6 {
+.tarjeta6,
+.tarjeta7,
+.tarjeta8,
+.tarjeta9{
     @include centrado;
     height: 300px;
     display: flex;
@@ -96,74 +115,76 @@ $negro: black;
     border: 1px solid black;
     border-radius: 10px;
 }
-.titulo_productos {
+.titulo_productos{
     text-align: center;
 }
-.clientes_body {
+.clientes_body{
     height: 100vh;
     position: relative;
 }
-.clientes {
+.clientes{
    @include centrado;
     padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
 }
-.imagen_1 {
+.imagen_1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    img{
+        width: 100%;
+    }
 }
-.imagen_1 img {
-    width: 100%;
-}
-.contacto {
+
+.contacto{
     position: relative;
     height: 100vh;
+    form{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        input{
+            width: 300px;
+            height: 25px;
+        }
+        textarea{
+            width: 300px;
+            height: 45px;
+        }
+    }
+    
 }
-#contacto h2 {
-    text-align: center;
-    font-size: 35px;
+#contacto{
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    footer{
+        width: 100%;
+    }
 }
-.contacto form {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 15px;
-}
-.contacto footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.form input {
-    width: 300px;
-    height: 25px;
-}
-.form textarea {
-    width: 300px;
-    height: 45px;
-}
-#nosotros {
+
+#nosotros{
     position: relative;
     height: 100vh;
+    footer{
+        width: 100%;
+    }
 }
-#nosotros footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.contenedor_nosotros {
+
+.contenedor_nosotros{
     width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h2{
+        margin-top: 30px;
+    }
 }
-.contenedor_nosotros h2 {
-    margin-top: 30px;
-} 
