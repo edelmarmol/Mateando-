@@ -6,6 +6,10 @@
     transform: translate(0px);
   }
 }
+footer {
+  margin-top: 100px;
+}
+
 .listas {
   transition: background-color 0.5s ease;
 }
