@@ -57,18 +57,27 @@ $negro: black;
     color: $negro;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "mate_camionero_bombilla termo_mate_campero yerbero_paris"
-                         "mate_imperial equipo_de_mate_clasico equipo_de_mate_stanly"
-                         "Mate_y_Termo_Patagonia yerbero_de_cuero_ecologico Mate_Grabado";
+    grid-template-columns:1fr;
+    grid-template-areas: "mate_camionero_bombilla" 
+                         "termo_mate_campero" 
+                         "yerbero_paris"
+                         "mate_imperial" 
+                         "equipo_de_mate_clasico"
+                         "equipo_de_mate_stanly"
+                         "Mate_y_Termo_Patagonia"
+                         "yerbero_de_cuero_ecologico"
+                         "Mate_Grabado";
     gap: 15px;  
     a{
         background-color:gray;
         padding: 8px;
         border-radius: 30px;
+    :hover{
         animation-name: salto;
         animation-duration: 5s;
     }
+}    
+
 }
 .tarjeta1{
     grid-area: mate_camionero_bombilla;
@@ -170,7 +179,7 @@ $negro: black;
 }
 
 #nosotros{
-    position: relative;
+    position: absolute;
     height: 100vh;
     footer{
         width: 100%;
@@ -184,7 +193,19 @@ $negro: black;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    p {
+        text-align: center;
+    }
     h2{
         margin-top: 30px;
+    }
+}
+
+@media (min-width:992px){
+    .productos{
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-areas: "mate_camionero_bombilla termo_mate_campero yerbero_paris"
+                             "mate_imperial equipo_de_mate_clasico equipo_de_mate_stanly" 
+                             "Mate_y_Termo_Patagonia yerbero_de_cuero_ecologico Mate_Grabado"
     }
 }
